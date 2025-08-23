@@ -48,8 +48,8 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'dempApp1'
-          slot-name: 'Production'
-          package: .
+          app-name: 'lerningapp'
+        package: .
 
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0FFF9B586D584FDFA762D2D119279DE9 }}
+
