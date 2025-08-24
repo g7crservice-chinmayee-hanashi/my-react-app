@@ -33,7 +33,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: node-app
-          path: .
+          path: build
 
   deploy:
     runs-on: ubuntu-latest
@@ -61,6 +61,7 @@ jobs:
         with:
           app-name: 'demoapp4'
           slot-name: 'Production'
-          package: .
+          package: build
 
           
+
