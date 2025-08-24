@@ -61,5 +61,17 @@ jobs:
           app-name: 'lerningapp'
           slot-name: 'Production'
           package: .
+      
+
+      - name: 'Deploy to Azure Web App'
+        id: deploy-to-webapp-dgsf
+        uses: azure/webapps-deploy@v3
+        with:
+          app-name: 'lerningapp'
+          slot-name: 'dev'
+          package: .
+
+    
 
           
+
