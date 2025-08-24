@@ -61,7 +61,8 @@ jobs:
         with:
           app-name: 'demoapp4'
           slot-name: 'Production'
-          package: build
+          package: .
 
           
+
 
